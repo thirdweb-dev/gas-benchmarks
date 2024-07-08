@@ -1,0 +1,3 @@
+@modular-contracts/=lib/modular-contracts/src/
+@solady/=lib/solady/src/
+@thirdweb-dev/contracts=lib/contracts/contracts

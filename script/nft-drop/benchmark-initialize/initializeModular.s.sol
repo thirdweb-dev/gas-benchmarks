@@ -2,13 +2,13 @@
 pragma solidity ^0.8.13;
 
 import {Script, console} from "forge-std/Script.sol";
-import {LibClone} from "lib/solady/src/utils/LibClone.sol";
-import {ERC721CoreInitializable} from "modular-contracts/src/core/token/ERC721CoreInitializable.sol";
-import {BatchMetadataERC721} from "modular-contracts/src/extension/token/metadata/BatchMetadataERC721.sol";
-import {DelayedRevealBatchMetadataERC721} from "modular-contracts/src/extension/token/metadata/DelayedRevealBatchMetadataERC721.sol";
-import {ClaimableERC721} from "modular-contracts/src/extension/token/minting/ClaimableERC721.sol";
-import {RoyaltyERC721} from "modular-contracts/src/extension/token/royalty/RoyaltyERC721.sol";
-import {TransferableERC721} from "modular-contracts/src/extension/token/transferable/TransferableERC721.sol";
+import {LibClone} from "@solady/utils/LibClone.sol";
+import {ERC721CoreInitializable} from "@modular-contracts/core/token/ERC721CoreInitializable.sol";
+import {BatchMetadataERC721} from "@modular-contracts/extension/token/metadata/BatchMetadataERC721.sol";
+import {DelayedRevealBatchMetadataERC721} from "@modular-contracts/extension/token/metadata/DelayedRevealBatchMetadataERC721.sol";
+import {ClaimableERC721} from "@modular-contracts/extension/token/minting/ClaimableERC721.sol";
+import {RoyaltyERC721} from "@modular-contracts/extension/token/royalty/RoyaltyERC721.sol";
+import {TransferableERC721} from "@modular-contracts/extension/token/transferable/TransferableERC721.sol";
 
 contract BenchmarkModularNFTDrop_Initialize is Script {
     ERC721CoreInitializable public core;
